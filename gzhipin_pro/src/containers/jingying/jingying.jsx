@@ -1,0 +1,1 @@
+// jingying的主路由import React,{Component} from 'react'import {connect} from 'react-redux'class Jingying extends Component{    render(){        return(            <div>Jingying</div>        )    }}export default connect(    state=>({}))(Jingying)
