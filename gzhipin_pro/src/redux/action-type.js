@@ -1,0 +1,1 @@
+//授权成功 -- 注册成功和登录成功 --> 最后都进入主页面//export const AUTH_SUCCESS = "auth_success"// 错误提示信息 包含请求前 /请求后的错误信息export const ERROR_MSG = "error_msg"export const RECEIVE_MSG = 'receive_msg'export const RESET_MSG = 'reset_msg'
