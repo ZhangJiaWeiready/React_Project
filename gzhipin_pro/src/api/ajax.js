@@ -4,7 +4,9 @@
  */
 import axios from 'axios'
 
+// const BASE_URl = 'http://localhost:4000'
 export default function ajax(url, data={}, type='GET') {
+  // url = url + BASE_URl
   if(type==='GET') { // 发送GET请求
     // 拼请求参数串
     // data: {username: tom, password: 123}

@@ -6,8 +6,35 @@
 
 //底部导航样式 始终固定在最下面
 .am-tab-bar{
+
   width: 100%;
   height: inherit;
   position: fixed;
   bottom: 0;
+}
+.topNav{
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+}
+
+//消息文本居右
+#chat-page .chat-me .am-list-extra{
+  flex-basis: auto;
+
+
+  //宽度包裹内容
+}
+
+#chat-page .chat-me .am-list-content{
+  text-align: right;
+  padding-right: 15px;
+}
+/*使标题始终在顶部*/
+.sticky-header{
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }

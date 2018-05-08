@@ -1,0 +1,1 @@
+//引入客户端io    //  这个包包含两个包 一个是用于客户端一个是用于服务器端import io from 'socket.io-client'//连接服务器得到代表连接的socket对象    // ws 协议const socket = io('ws://localhost:5000')//绑定receiveMessage的监听，来接收服务器发送的消息socket.on('receiveMsg',function (data) {    console.log('浏览器接收到消息：',data)})socket.emit('sendMsg',{name:'Tom',date:Date.now()})console.log('浏览器向服务器发送消息',{name:'Tom',date:Date.now()})

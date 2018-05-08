@@ -13,6 +13,8 @@ import Main from './containers/main/main'
 
 import './assets/css/index.less'
 
+//将socket直接挂在到index上
+// import './test/socketio_test'
 ReactDOM.render((
   <Provider store={store}>
     <HashRouter>

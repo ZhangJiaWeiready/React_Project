@@ -14,3 +14,13 @@ export const reqUpdateUser = (user) => ajax('/update', user, 'POST')
 
 //获取用户信息
 export const reqUser = () => ajax('/user','GET')
+
+//获取用户列表
+export const reqUserList = (type) => ajax('/userList',{type},'GET')
+
+// 读取消息列表
+export const reqChatMsgList = () => ajax('/msgList')
+
+
+//修改消息为已读 因为到时候传值的时候需要的请求参数是一个对象
+export const reqReadMsg = (from) => ajax('/readmsg',{from},'POST')

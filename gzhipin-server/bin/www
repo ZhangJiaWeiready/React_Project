@@ -12,7 +12,7 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '5000');
+var port = normalizePort(process.env.PORT || '4000');
 app.set('port', port);
 
 /**
@@ -20,7 +20,8 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
-
+// 引入定义的模块 因为他是个函数所以需要传入server 给函数传参
+require('../socketIO/socketIo_server')(server)
 /**
  * Listen on provided port, on all network interfaces.
  */

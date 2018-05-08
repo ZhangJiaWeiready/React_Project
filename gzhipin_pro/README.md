@@ -133,4 +133,16 @@
         整体逻辑分析
         ajax请求根据cookie中的userid查询获取对应的user信息
 
-    
+# 
+1. 聊天组件功能 chat.jsx -- 路由组件
+    /chat/:userid
+    因为id不一样所以需要这样设置,然后就可以在this.props.match.param中查看这个userid了
+    点击列表用户的时候 push跳转到指定的路由
+    1. 点击发送 
+        from 谁发的 
+        to 去哪里 -- this.props.match.parmas.userid
+2. 消息列表 message.jsx 
+3. 未读消息数量显示
+
+一打开聊天 就会发送请求，然后把别人发送过来的消息 的read改为false
+发送请求在 Didmount中发送请求，更新消息的未读状态
